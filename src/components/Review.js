@@ -81,14 +81,8 @@ const[curr, setCurr] = useState(0)
         }
         
     }}>Next</button>
-    </div>
 
-
-
-
-    
-    
-    <button onClick={() => {
+        <button onClick={() => {
         while(true)
         {
             let randomNumber = Math.floor(Math.random() * 4)
@@ -99,6 +93,14 @@ const[curr, setCurr] = useState(0)
             }
         }
     }} className='random-btn'>surprise me</button>
+    </div>
+
+
+
+
+    
+    
+
     </div>
 
   )
