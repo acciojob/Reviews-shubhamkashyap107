@@ -50,8 +50,8 @@ const[curr, setCurr] = useState(0)
   return (
     <div>
 
-    <div>
-        <p id={data[curr].id} className='author'>{data[curr].name}</p>
+    <div className='review'>
+        <p id={`author-${data[curr].id}`} className='author'>{data[curr].name}</p>
         <p className='job'>{data[curr].job}</p>
         <p className='info'>{data[curr].text}</p>
         <img className='person-img' src={data[curr].image} />
