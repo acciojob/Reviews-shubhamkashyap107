@@ -55,6 +55,19 @@ const[curr, setCurr] = useState(0)
         <p className='job'>{data[curr].job}</p>
         <p className='info'>{data[curr].text}</p>
         <img className='person-img' src={data[curr].image} />
+
+
+            <button className='prev-btn' onClick={() => {
+        if(curr == 0)
+        {
+            setCurr(3)
+        }
+        else
+        {
+            setCurr(curr - 1)
+        }
+
+    }}>Previous</button>
     </div>
 
     <button className='next-btn' onClick={() => {
@@ -69,17 +82,9 @@ const[curr, setCurr] = useState(0)
         
     }}>Next</button>
 
-    <button className='prev-btn' onClick={() => {
-        if(curr == 0)
-        {
-            setCurr(3)
-        }
-        else
-        {
-            setCurr(curr - 1)
-        }
 
-    }}>Previous</button>
+    
+    
     <button onClick={() => {
         while(true)
         {
